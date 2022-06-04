@@ -2,7 +2,6 @@ const app = require("express").Router()
 const { Thoughts,Thoughts} = require('../models')
 
 
-
 app.get('/', (req, res) => {
    Thoughts.find({})
       .then(dbThoughts => {

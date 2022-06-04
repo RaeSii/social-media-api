@@ -35,8 +35,4 @@ const ReactionSchema = new Schema({
     id: false
 });
 
-
-
-
-
 module.exports = ReactionSchema;
