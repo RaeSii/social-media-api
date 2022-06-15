@@ -1,12 +1,14 @@
 # Social-Media-API
 
-## Requirement
-Enter npm start or npm run develop in command line to invoke the application.
+### Usage
+
+  The application will be invoked by using the following command:
+	
+	$ npm start
 
   ## Table-of-Contents
   * [Description and Task](#description)
   * [Technology](#technology)
-  * [Video](#video)
   * [Website](#website)
   * [License](#license) 
   * [Questions](#questions)
@@ -42,9 +44,9 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
  ## [License](#license)
   The application is covered under the following license:
-![badge](https://img.shields.io/badge/license-apache-blue)
+![badge](https://img.shields.io/badge/license-ISC-blue)
 
   ## [Questions](#questions)
-  Contact Information Below:
+  Contact Information Below: 
 
   [GitHub](https://github.com/RaeSii/social-media-api.git)
