@@ -69,8 +69,8 @@ app.get('/', (req, res) => {
        });
    });
 
-   app.delete('/:id', (req, res) => {
-    Thoughts.findOneAndDelete({_id:req.params.id})
+   app.delete('/:thoughtid', (req, res) => {
+    Thoughts.findOneAndDelete({_id:req.params.thoughtid})
        .then(dbThoughts => {
         return res.json(dbThoughts);
        })

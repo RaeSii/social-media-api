@@ -46,8 +46,8 @@ app.put('/:id', (req, res) => {
     });
 });
 
-app.delete('/:id', (req, res) => {
-  User.findOneAndDelete({ _id: req.params.id })
+app.delete('/:userid', (req, res) => {
+  User.findOneAndDelete({_id:req.params.userid})
     .then(dbUser => {
       return res.json(dbUser);
     })
@@ -55,6 +55,18 @@ app.delete('/:id', (req, res) => {
       return res.json(err);
     });
 });
+
+// My sorry attempt at the bonus, if you know where I went wrong please feel free to comment in feedback, TY.
+// app.delete('/:_id/thoughts', (req, res) =>{
+//   User.findOneAndDelete({_id:req.params.id},
+//     {$pull:{thoughts:{thoughts:req.params.thoughts}}},{new:true})
+//     .then(dbUser => {
+//       return res.json(dbUser);
+//     })
+//     .catch(err => {
+//       return res.json(err);
+//     });
+// });
 
 app.put('/:id/friends/:friendId', (req, res) => {
   User.findByIdAndUpdate({ _id: req.params.id }, { $push: { friends: req.params.friendId } }, { new: true })
